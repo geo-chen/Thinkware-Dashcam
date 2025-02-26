@@ -1,7 +1,7 @@
 # Thinkware Dashcam
 
 ## Finding 1: Bypass of device pairing
-Product: Thinkware Dashcam
+Product: Thinkware Dashcam - https://www.thinkware.com/Products/Dashcam/F800Pro
 
 Model: F800 Pro
 
