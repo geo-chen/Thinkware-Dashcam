@@ -2,11 +2,16 @@
 
 ## Finding 1: Bypass of device pairing
 Product: Thinkware Dashcam
+
 Model: F800 Pro
+
 Affected components: Authentication mechanism, device registration/pairing 
+
 Attack vector: An attacker who connects using default credentials can bypass the 2nf-factor device registration/pairing/binding
 
+
 Description: 
+
 While the official documentation states that we need to pair the dashcam to the phone while using the Thinkware Cloud app, that 2nd factor device registration could be bypassed if the services are accessed directly without going through the app:
 
 ![image](https://github.com/user-attachments/assets/a8a9beaa-fc70-4b8f-84a0-f7b5d3e90901)
@@ -24,10 +29,15 @@ The dashcam only supports 1 device at a time. What this means is that an attacke
 
 ## Finding 3: User credentials saved in plain-text
 Product: Thinkware Dashcam
+
 Model: F800 Pro
+
 Affected components: Credentials of dashcam 
+
 Attack vector: An attacker who has momentary access to the dashcam can extract the credentials in plain-text.
+
 Description: 
+
 The credentials of the dashcam owner is stored in plain-text in the /tmp/hostapd.conf configuration file:
 
 ![image](https://github.com/user-attachments/assets/e4355b45-d11a-4399-b3d6-34c6b2ae458a)
@@ -35,9 +45,13 @@ The credentials of the dashcam owner is stored in plain-text in the /tmp/hostapd
 
 ## Finding 4: Write-access unprotected
 Product: Thinkware Dashcam
+
 Model: F800 Pro
+
 Affected components: File storage
+
 Description:
+
 An attacker connected to the network can write arbitrary files or malware into the dashcam:
 
 ![image](https://github.com/user-attachments/assets/b18ccb18-6f50-47e9-b017-6ad043498efe)
