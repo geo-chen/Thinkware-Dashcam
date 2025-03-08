@@ -1,6 +1,6 @@
 # Thinkware Dashcam
 
-## Finding 1: Bypass of device pairing
+## Finding 1 - CVE-2025-2119: Bypass of device pairing
 Product: Thinkware Dashcam - https://www.thinkware.com/Products/Dashcam/F800Pro
 
 Model: F800 Pro
@@ -25,9 +25,9 @@ While performing these actions and downloading the video recordings, there were 
 
 
 ## Finding 2: DoS 
-The dashcam only supports 1 device at a time. What this means is that an attacker who's connected to the dashcam first would create a denial of service (DoS) for the rightful owner.
+The dashcam only supports 1 device at a time. What this means is that an attacker who's connected to the dashcam first would create a denial of service (DoS) for the rightful owner. This might be a side effect of a single-session restriction.
 
-## Finding 3: User credentials saved in plain-text
+## Finding 3 - CVE-2025-2120: User credentials saved in plain-text
 Product: Thinkware Dashcam
 
 Model: F800 Pro
@@ -43,7 +43,7 @@ The credentials of the dashcam owner is stored in plain-text in the /tmp/hostapd
 ![image](https://github.com/user-attachments/assets/e4355b45-d11a-4399-b3d6-34c6b2ae458a)
 
 
-## Finding 4: Write-access unprotected
+## Finding 4 - CVE-2025-2121: Write-access unprotected
 Product: Thinkware Dashcam
 
 Model: F800 Pro
@@ -57,7 +57,7 @@ An attacker connected to the network can write arbitrary files or malware into t
 ![image](https://github.com/user-attachments/assets/b18ccb18-6f50-47e9-b017-6ad043498efe)
 
 
-## Finding 5: CVE-2024–53614 - Hardcoded plaintext decryption key in Thinkware Cloud APK
+## Finding 5 - CVE-2024–53614: Hardcoded plaintext decryption key in Thinkware Cloud APK
 
 ### Description
 A hardcoded decryption key in Thinkware Cloud APK v4.3.46 allows attackers to access sensitive data and execute arbitrary commands with elevated privileges.
