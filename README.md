@@ -24,7 +24,7 @@ Using default credentials 123456789, I could connect to a thinkware dashcam's wi
 While performing these actions and downloading the video recordings, there were no sounds activated on the dashcam as well so the victim would not know.
 
 
-## Finding 2: DoS 
+## Finding 2 - CVE-2025-2122: DoS 
 The dashcam only supports 1 device at a time. What this means is that an attacker who's connected to the dashcam first would create a denial of service (DoS) for the rightful owner. This might be a side effect of a single-session restriction.
 
 ## Finding 3 - CVE-2025-2120: User credentials saved in plain-text
