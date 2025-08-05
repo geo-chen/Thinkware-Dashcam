@@ -7,7 +7,7 @@ Model: F800 Pro
 
 Affected components: Authentication mechanism, device registration/pairing 
 
-Attack vector: An attacker who connects using default credentials can bypass the 2nf-factor device registration/pairing/binding
+Attack vector: An attacker who connects using default credentials can bypass the 2nd-factor device registration/pairing/binding
 
 
 Description: 
